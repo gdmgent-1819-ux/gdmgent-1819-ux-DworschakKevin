@@ -39,9 +39,6 @@ a {
 }
 
 @media(max-width: 575.99999px) {
-    html[data-debug] body::after {
-        content: 'extra small device'
-    }
 
     body {
         background-color: var(--c-quinary);
@@ -56,9 +53,6 @@ a {
 }
 
 @media(min-width: 576px) and (max-width: 767.99999px) {
-    html[data-debug] body::after {
-        content: 'small device'
-    }
 
 
     .downkey{
@@ -73,9 +67,6 @@ a {
 }
 
 @media(min-width: 768px) and (max-width: 991.99999px) {
-    html[data-debug] body::after {
-        content: 'medium device'
-    }
     .downkey{
         margin-bottom: -80px;
         animation: mover 1s infinite  alternate;
@@ -88,9 +79,6 @@ a {
 }
 
 @media(min-width: 992px) and (max-width: 1199.99999px) {
-    html[data-debug] body::after {
-        content: 'large device'
-    }
 
     
     .downkey{
@@ -105,9 +93,6 @@ a {
 }
 
 @media(min-width: 1200px) {
-    html[data-debug] body::after {
-        content: 'extra large device'
-    }
     .downkey{
         margin-bottom: -164px;
         animation: mover 1s infinite  alternate;
