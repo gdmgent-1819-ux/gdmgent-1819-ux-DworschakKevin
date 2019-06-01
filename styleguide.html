@@ -5,17 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Styleguide</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/booking.css">
     <link rel="stylesheet" href="assets/css/styleguide.css">
 </head>
 <body>
 <div class="container">
     <h1 class="sg-title">Digital styleguide</h1>
     <h2 class="sg-subtitle">Kleuren</h2>
+    <p>white</p>
+    <p class="black">black</p>
+    <p class="green">hsl(161, 58%, 64%)</p>
+    <p class="brown">hsl(21, 29%, 25%)</p>
+
     <h2 class="sg-subtitle">Typografie</h2>
+    <p id="txtOne">lato</p>
+    <p id="txtTwo">lato light</p>
+    <p id="txtThree">Raleway</p>
+
     <h2 class="sg-subtitle">Knopppen</h2>
+
+<input type="button" value="Book now" id="bookBtn">
+<a class="col-1 contact" href="">
+        constact
+    </a>
+
     <h2 class="sg-subtitle">Formulier</h2>
+    <form action="">
+            <input class="input" type="text" name="" id="firstName" placeholder="First Name" required>
+            <input class="input" type="text" name="" id="LastName" placeholder="Last Name" required>
+            <input class="input" type="text" id="adress" placeholder="adress" required>
+            <input class="input" type="number" name="" id="number" placeholder="nr." min="1" required>
+            <input class="input" type="number" name="" id="areacode" placeholder="areacode" min="1" required>
+            <input class="input" type="email" name="" id="email" placeholder="email" required>
+            <label id="calender" for="departure"> <input class="input" placeholder="Departure" name="departure"
+            type="text" onfocus="(this.type='date')" id="date" required> </label>
+            <input class="input" type="tel" name="" id="phoneNumber" placeholder="Phone number" required>
+            <label id="calender" for="arrival"> <input class="input" placeholder="Arrival" name="arrival"
+            type="text" onfocus="(this.type='date')" id="date" required></label>
+    </form>
     <h2 class="sg-subtitle">Componenten</h2>
-</div>
+    <div class="navBg">
+    <nav class="row flex2">
+            <div class="col-1"></div>
+            <div class="col-1"> <img src="assets/logo/logo.svg" alt="">
+            </div>
+            <ul class="flex nav">
+                <a class="col-1 active" href="">
+                    <li>Home</li>
+                </a>
+                <a class="col-1" href="">
+                    <li class="width">about us</li>
+                </a>
+                <li class="col-2 white">
+                    <div id="lodginbtn" onclick="toggle('hidden');"> lodgin <img src="assets/logo/Polygon 1.png"
+                            alt=""></div>
+                    <ul id="hidden">
+                        <a href="">
+                            <li>tent</li>
+                        </a>
+                        <a href="">
+                            <li class="widthB">mobile home</li>
+                        </a>
+                        <a href="">
+                            <li>treehouse</li>
+                        </a>
+                    </ul>
+                </li>
+                <a class="col-2" href="">
+                    <li>activities</li>
+                </a>
+                <a class="col-1 contact" href="">
+                    <li>constact</li>
+                </a>
+            </ul>
+            <div class="col-3">
+                
+                <i class="fas fa-search fa-2x iconWhite"></i>
+                <input type="search" name="" id="search" placeholder="Search...">
+            </div>
+            <div class="col-1">
+                <div class="languageFlex" id="languagebtn" onclick="toggle('languages');">
+                    <p class="noMarge">EN</p> <img src="assets/logo//Polygon 2.png" alt="">
+                </div>
+                <ul id="languages">
+                    <li>NL</li>
+                    <li>FR</li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <footer id="footer">
+            <div class="row container footFlex">
+                <div class="col-3">
+                    <div>
+                        <nav>
+                            <ul class="footNav">
+                               <a href=""><li id="footPad" class="footActive">Home</li></a>
+                               <a href=""><li id="footPad">About us</li></a>
+                               <div class="white footPad" id="lodginbtn" onclick="toggle('foot');"> lodgin <img src="assets/logo/Polygon 1.png"
+                                alt=""></div>
+                        <ul id="foot">
+                            <a href="">
+                                <li>tent</li>
+                            </a>
+                            <a href="">
+                                <li class="">mobile home</li>
+                            </a>
+                            <a href="">
+                                <li id="footPad">treehouse</li>
+                            </a>
+                        </ul>
+                               <a href=""><li id="footPad">activities</li></a>
+                               <a href=""><li id="footPad" class="footContact">contact</li></a>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-6 center">
+                    <address class="adressStyle">
+                            Camp MaryCielo <br>
+                            Carr. de l’Estany Tort <br>
+                            25597 Espot,<br>
+                            Lérida, Spain <br>
+                           <a href="tel: 0034972331013"></a> 0034 972 33 10 13 <br>
+                           <a href="mailto:info@campingmarycielo.com"></a> info@campingmarycielo.com
+                    </address>
+                </div>
+                <div class="col-3">
+                    <img class="footLogo" src="assets/logo/logo.svg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright">Made By &copy; Kevin Dworschak</p>
+                </div>
+            </div>
+        </footer>
+        <div class="row">
+        <div class="col-3">
+                <img src="assets/images/jens_johnsson_121807_unsplash_A0_Rectangle_38_pattern.png" alt="">
+                <h3 id="lodgingTitle">Lake fun</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt totam molestiae sit cum,
+                    asperiores adipisci aspernatur alias deleniti nulla natus nobis! Iusto, totam? Aliquid explicabo
+                    nostrum, eum aperiam est quidem.<br>
+                    <a href=""><span id="lodgingLink">More...</span></a></p>
+            </div>
+            <div class="col-3">
+                    <div class="price">
+                    <img src="assets/images/Subtraction_3_A0_BooleanGroup_4_pattern.png" alt="">
+                        <div id="price">€250</div>
+                </div>
+                    <h3 id="lodgingTitle">treehouse</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt totam molestiae sit cum,
+                        asperiores adipisci aspernatur alias deleniti nulla natus nobis! Iusto, totam? Aliquid explicabo
+                        nostrum, eum aperiam est quidem.<br>
+                        <a href=""><span id="lodgingLink">More...</span></a></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-11 articleBg" id="detailB">
+                    <div id="activL"> <img
+                            src="assets/images/atte_gronlund_43354_unsplash_A0_Rectangle_22_pattern.png" alt="">
+                        <div id="label">
+                            <h4 class="labelContent">Swimming pool</h4>
+                        </div>
+                    </div>
+                    <div class="txtbtn">
+                    <div class="swimContent">
+                        <p id="pooltxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <button id="activitybtn">See more</button>
+                    </div>
+                </div>
+            </div>
+                
 </body>
 </html>
