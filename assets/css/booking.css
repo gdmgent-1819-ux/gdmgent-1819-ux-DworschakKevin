@@ -1,0 +1,417 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+@import url('variables.css');
+@import url('base.css');
+
+@import url('components/grid.css');
+@import url('components/buttons.css');
+@import url('components/forms.css');
+
+
+body {
+    background-color: var(--c-quinary);
+    
+    margin: 0;
+}
+
+html[data-debug] body::after {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: .25rem;
+    color: white;
+    content: '';
+    display: block;
+    margin: 1rem;
+    padding: .5rem .75rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: white;
+    font-family: var(--f-heading);
+    text-shadow:
+        1px 1px 1px var(--c-ahs-grijs-midden),
+        1px 1px 1px var(--c-ahs-grijs-midden),
+        1px 1px 1px var(--c-ahs-grijs-midden),
+        1px 1px 1px var(--c-ahs-grijs-midden),
+        1px 1px 1px var(--c-ahs-grijs-midden),
+        1px 1px 1px var(--c-ahs-grijs-midden);
+}
+
+
+li {
+    font-family: var(--f-heading);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+@media(max-width: 575.99999px) {
+    html[data-debug] body::after {
+        content: 'extra small device'
+    }
+
+    body {
+        background-color: var(--c-quinary);
+    }
+    .downkey{
+        animation: mover 1s infinite  alternate;
+    }
+    @keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+}
+
+@media(min-width: 576px) and (max-width: 767.99999px) {
+    html[data-debug] body::after {
+        content: 'small device'
+    }
+
+
+    .downkey{
+        margin-bottom: -80px;
+        animation: mover 1s infinite  alternate;
+    }
+    @keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+   
+}
+
+@media(min-width: 768px) and (max-width: 991.99999px) {
+    html[data-debug] body::after {
+        content: 'medium device'
+    }
+    .downkey{
+        margin-bottom: -80px;
+        animation: mover 1s infinite  alternate;
+    }
+    @keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+    
+}
+
+@media(min-width: 992px) and (max-width: 1199.99999px) {
+    html[data-debug] body::after {
+        content: 'large device'
+    }
+
+    
+    .downkey{
+        margin-bottom: -170px;
+        animation: mover 1s infinite  alternate;
+    }
+    @keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+    
+}
+
+@media(min-width: 1200px) {
+    html[data-debug] body::after {
+        content: 'extra large device'
+    }
+    .downkey{
+        margin-bottom: -300px;
+        animation: mover 1s infinite  alternate;
+    }
+    @keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+}
+
+/*header code*/
+/*navigation*/
+.nav{
+    list-style-type: none;
+    text-align: right;
+}
+#headerImg {
+    height: 100vh;
+    background-position: top, center;
+    background-repeat: no-repeat;
+    background-image: url("../images//gradientHeader@2x.png"), url("../images/kevin_ianeselli_442719_unsplas_A0_Rectangle_4_pattern@2x.png");
+}
+
+.logoBg {
+    position: absolute;
+    bottom: -100px;
+    left: -70px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#hidden{
+    display: none;
+}
+
+.white {
+    color: white;
+    font-size: 16px;
+    font-family: var(--f-heading);
+    font-weight: bold;
+}
+.iconWhite{
+    color: white;
+}
+.contact{
+    color: white;
+    font-size: 16px;
+    font-family: var(--f-heading);
+    background-color: rgb(110, 216, 182);
+    border: solid 1px rgb(110, 216, 182);
+    border-radius: 20px;
+    width: 170px;
+    padding-right: 5px;
+    margin-bottom: 52px;
+}
+#lodginbtn:hover{
+    cursor: pointer;
+}
+#languagebtn{
+    cursor: pointer;
+}
+#search {
+    background: transparent;
+    border-radius: 10px;
+    height: 20px;
+    width: 220px;
+    box-shadow: 0 12px 0px -8px white;
+    border: none;
+    outline: none;
+    padding-left: 9px;
+}
+.fa-search{
+    margin-right: 25px;
+}
+
+input[type=search]::placeholder {
+    color: white;
+    font-family: var(--f-extra);
+    font-size: 16px;
+}
+
+input[type=search]:focus {
+    color: white;
+    font-family: var(--f-heading);
+    font-size: 16px;
+}
+
+input[type=search]:outfocus {
+    color: white;
+    font-family: var(--f-heading);
+    font-size: 16px;
+}
+input[type=date]{
+    font-family: var(--f-body);
+    font-size: 16px;
+}
+.active{
+    color: rgb(110, 216, 182);
+    background: transparent;
+    border-radius: 10px;
+    height: 9px;
+    width: 60px;
+    box-shadow: 0 24px 0px -6px rgb(110, 216, 182);
+    border: none;
+    outline: none;
+}
+.width{
+    width: 67px;
+}
+.widthB{
+    width: 102px;
+}
+.languageFlex{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.noMarge{
+    margin: 0;
+}
+#languagebtn, #languages{
+    color: white;
+    font-family: var(--f-heading);
+    font-weight: bold;
+}
+#languages{
+    margin: 0;
+    text-align: left;
+    display: none;
+}
+
+.keyFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*booking rectangle*/
+.headerMargin {
+    margin-top: 118px;
+}
+
+#bookingBg {
+    background-color: rgba(255, 255, 255, 0.5);
+    /*width: 100%;
+    height: 444px;*/
+    border-radius: 10px;
+}
+
+#bookingTitle {
+    font-family: var(--f-heading);
+    text-align: center;
+    color: white;
+    font-size: 26px;
+}
+
+input[type=text]::placeholder {
+    font-family: var(--f-body);
+    font-size: 16px;
+}
+input[type=email]::placeholder{
+    font-family: var(--f-body);
+    font-size: 16px;
+}
+input[type=number]::placeholder{
+    font-family: var(--f-body);
+    font-size: 16px;
+}
+input[type=tel]::placeholder{
+    font-family: var(--f-body);
+    font-size: 16px;
+}
+
+
+
+
+
+/*booking page*/
+/*header*/
+#bookHeadimg{
+    height: 50vh;
+    background-position: top, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images//gradientHeader@2x.png"), url("../images/jeshoots-com-462287-unsplash.jpg");
+}
+/*booking page*/
+/*header*/
+#bookHeadimg{
+    height: 50vh;
+    background-position: top, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images//gradientHeader@2x.png"), url("../images/jeshoots-com-462287-unsplash.jpg");
+}
+.input{
+    background-color: #E5E5E5;
+    border: solid 1px #E5E5E5;
+    border-radius: 10px;
+    padding: 30px 230px 30px 20px;
+    margin-top: 30px;
+}
+label {
+    position: relative;
+}
+
+label::after {
+    content: "";
+    position: absolute;
+    right: 44px;
+    top: -12px;
+    bottom: 0;
+    width: 28px;
+    background: url(../logo/calendar-alt-regular.svg);
+    background-repeat: no-repeat;
+}
+.mainTitle{
+    color: var(--c-quaternary);
+    text-align: center;
+    margin-top: 51px;
+    font-family: var(--f-heading);
+}
+/*footer*/
+#footer{
+    background-color: black;
+    padding-top: 109px;
+}
+#foot{
+    display: none;
+    list-style: none;
+}
+.footActive{
+    color: rgb(110, 216, 182);
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.footContact{
+    background-color: var(--c-secondary);
+    width: 68px;
+    /* margin-left: 151px; */
+    border-radius: 20px;
+    padding: 10px;
+    /* text-align: center; */
+}
+.footNav{
+    list-style-type: none;
+}
+
+.footPad, #footPad{
+    padding-bottom: 15px;
+}
+.adressStyle{
+    color: #6B80AB;
+    font-size: 20px;
+    font-family: var(--f-heading);
+    font-weight: bold;
+    font-style: normal;
+}
+.center{
+    text-align: center;
+}
+.footLogo{
+    width: 140px;
+}
+.copyright{
+    color: #6B80AB;
+    font-size: 20px;
+    font-family: var(--f-heading);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+}
+#bookBtn{
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px 10px 20px;
+    font-family: var(--f-heading);
+    background-color: rgb(110, 216, 182);
+    align-self: flex-end;
+    margin-right: 60px;
+    margin-top: 30px;
+    margin-bottom: 36px;
+    border: solid 1px rgb(110, 216, 182);
+    border-radius: 20px;
+}

@@ -1,26 +1,25 @@
 
 :root {
-  /**
-   * Colour palette
-   */
-  --c-primary: hsl(190, 100%, 40%);
+  /**Colors*/
+  --c-white: hsl(0, 0%, 100%);
+  --c-green: hsl(161, 58%, 64%);
+  --c-black: hsl(0, 0%, 0%);
+  --c-dark-brown: hsl(21, 29%, 25%);
 
-  /**
-   * Layout
-   */
-  --l-gutter: 1rem;
+  --c-primary: var(--c-white);
+  --c-secondary: var(--c-green);
+  --c-tertiary: var(--c-black);
+  --c-quaternary: var(--c-dark-brown);
+  /**Font*/
+  --f-body: 'Lato';
+  --f-heading: 'Raleway';
+  --f-extra: 'Lato Light';
 
-  /**
-   * Typography
-   */
-  --t-primary: Arial, Helvetica, sans-serif;
-  --t-secondary: Arial, Helvetica, sans-serif;
-  --t-tertiary: monospace;
+  /*grid*/
 
-  --t-headline: var(--t-primary);
-  --t-subtitle: var(--t-primary);
-  --t-body: var(--t-secondary);
-  --t-code: var(--t-tertiary);
+  --unit: .5rem;
 }
+
+
 
 

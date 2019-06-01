@@ -1,3 +1,5 @@
+@import url('variables.css');
+
 .sg-title {
     font-size: 1.7rem;
     font-weight: 400;
@@ -14,4 +16,166 @@
     text-transform: uppercase;
     margin: 2rem 0 .5rem 0;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+.black{
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+.green{
+    background-color: hsl(161, 58%, 64%);
+    padding: 10px;
+}
+.brown{
+    background-color: hsl(21, 29%, 25%);
+    padding: 10px;
+    color: white;
+}
+
+
+#txtOne{
+    font-family: 'Lato';
+}
+#txtTwo{
+    font-family: 'Lato Light'
+}
+#txtThree{
+font-family: 'Raleway';
+}
+.input{
+    background-color: #E5E5E5;
+    border: solid 1px #E5E5E5;
+    border-radius: 10px;
+    padding: 30px 230px 30px 20px;
+    margin-top: 30px;
+}
+label {
+    position: relative;
+}
+
+label::after {
+    content: "";
+    position: absolute;
+    right: 44px;
+    top: -12px;
+    bottom: 0;
+    width: 28px;
+    background: url(../logo/calendar-alt-regular.svg);
+    background-repeat: no-repeat;
+}
+input[type=text]::placeholder {
+    font-family: var(--f-body);
+    font-size: 16px;
+}
+
+.navBg {
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-image: url("../images//gradientHeader@2x.png");
+
+}
+.mainTitle{
+    color: var(--c-quaternary);
+    text-align: center;
+    margin-top: 51px;
+    font-family: var(--f-heading);
+}
+.self{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.price{
+    position: relative;
+}
+#price{
+    position: absolute;
+    top: 44px;
+    left: 60px;
+    color: var(--c-secondary);
+    font-size: 18px;
+    font-family: var(--f-body);
+    font-weight: bold;
+
+}
+#middleTxt{
+width: 360px;
+}
+#lodgingTitle{
+    text-align: center;
+  
+}
+#lodgingLink{
+    color: var(--c-secondary);
+}
+#activL{
+    position: relative;
+}
+#label{
+    position: absolute;
+    top: 0;
+    
+}
+.labelContent{
+    color: var(--c-secondary);
+    font-weight: 500;
+    font-size: 15px;
+    padding: 9px 20px 9px 20px;
+    background-color: var(--c-primary);
+    border: solid 1px var(--c-primary);
+    border-radius: 0px 20px 20px 0px;
+}
+.articleBg{
+    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    width: 100%;
+    height: 264px;
+    margin-top: 160px
+
+    
+}
+#detailA{
+    padding: 0px;
+}
+#detailB{
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+.txtbtn{
+    display: flex;
+    flex-direction: column;
+    width: 471px;
+    margin-left: 100px;
+    align-self: center;
+}
+.txtbtnB{
+    display: flex;
+    flex-direction: column;
+    width: 471px;
+    /* margin-left: 100px; */
+    align-self: center;
+    padding: 0;
+    margin-right: 107px;
+}
+#pooltxt{
+    width: 471px;
+    color: var(--c-primary);
+}
+#activitybtn{
+    width: 112px;
+    align-self: flex-end;
+    background-color: var(--c-secondary);
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    border: 0;
+    font-family: var(--f-heading);
+    font-size: 16px;
+    color: var(--c-primary);
+}
+.swimContent{
+    display: flex;
+    flex-direction: column;
 }
