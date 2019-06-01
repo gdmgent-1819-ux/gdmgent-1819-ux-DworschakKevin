@@ -14,19 +14,6 @@ body {
     margin: 0;
 }
 
-html[data-debug] body::after {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: .25rem;
-    color: white;
-    content: '';
-    display: block;
-    margin: 1rem;
-    padding: .5rem .75rem;
-    position: fixed;
-    right: 0;
-    top: 0;
-    text-transform: uppercase;
-}
 
 h1 {
     color: white;
@@ -53,9 +40,6 @@ a {
 }
 
 @media(max-width: 575.99999px) {
-    html[data-debug] body::after {
-        content: 'extra small device'
-    }
 
     body {
         background-color: var(--c-quinary);
@@ -70,10 +54,7 @@ a {
 }
 
 @media(min-width: 576px) and (max-width: 767.99999px) {
-    html[data-debug] body::after {
-        content: 'small device'
-    }
-
+   
 
     .downkey{
         margin-bottom: -80px;
@@ -87,9 +68,7 @@ a {
 }
 
 @media(min-width: 768px) and (max-width: 991.99999px) {
-    html[data-debug] body::after {
-        content: 'medium device'
-    }
+   
     .downkey{
         margin-bottom: -80px;
         animation: mover 1s infinite  alternate;
@@ -102,9 +81,7 @@ a {
 }
 
 @media(min-width: 992px) and (max-width: 1199.99999px) {
-    html[data-debug] body::after {
-        content: 'large device'
-    }
+   
 
     
     .downkey{
@@ -119,9 +96,7 @@ a {
 }
 
 @media(min-width: 1200px) {
-    html[data-debug] body::after {
-        content: 'extra large device'
-    }
+    
     .downkey{
         margin-bottom: -300px;
         animation: mover 1s infinite  alternate;
