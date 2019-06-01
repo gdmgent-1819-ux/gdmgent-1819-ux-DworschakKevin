@@ -1,12 +1,375 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-debug>
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eindopdracht UX</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/components/grid.css">
 </head>
-<body>
+
+<body id="body">
+    <header>
+        <div id="headerImg" class="">
+            <div class="logoBg"><img src="assets/logo/logoBG@2x.png" alt=""></div>
+            <div class="container">
+                <nav class="row flex2">
+                    <div class="col-1"></div>
+                    <div class="col-1"> <img src="assets/logo/logo.svg" alt="">
+                    </div>
+                    <ul class="flex nav">
+                        <a class="col-1 active" href="">
+                            <li>Home</li>
+                        </a>
+                        <a class="col-1" href="">
+                            <li class="width">about us</li>
+                        </a>
+                        <li class="col-2 white">
+                            <div id="lodginbtn" onclick="toggle('hidden');"> lodgin <img src="assets/logo/Polygon 1.png"
+                                    alt=""></div>
+                            <ul id="hidden">
+                                <a href="">
+                                    <li>tent</li>
+                                </a>
+                                <a href="">
+                                    <li class="widthB">mobile home</li>
+                                </a>
+                                <a href="">
+                                    <li>treehouse</li>
+                                </a>
+                            </ul>
+                        </li>
+                        <a class="col-2" href="">
+                            <li>activities</li>
+                        </a>
+                        <a class="col-1 contact" href="">
+                            <li>constact</li>
+                        </a>
+                    </ul>
+                    <div class="col-3">
+                        
+                        <i class="fas fa-search fa-2x iconWhite"></i>
+                        <input type="search" name="" id="search" placeholder="Search...">
+                    </div>
+                    <div class="col-1">
+                        <div class="languageFlex" id="languagebtn" onclick="toggle('languages');">
+                            <p class="noMarge">EN</p> <img src="assets/logo//Polygon 2.png" alt="">
+                        </div>
+                        <ul id="languages">
+                            <li>NL</li>
+                            <li>FR</li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="row headerMargin">
+                    <div class="col-7"></div>
+                    <div class="col-5">
+                        <div id="bookingBg">
+                            <div class="dateFlex">
+                                <h2 id="bookingTitle">Book Now</h2>
+                                <label id="calender" for="departure"> <input placeholder="Departure" name="departure"
+                                        type="text" onfocus="(this.type='date')" id="date"> </label>
+                                <label id="calender" for="arrival"> <input placeholder="Arrival" name="arrival"
+                                        type="text" onfocus="(this.type='date')" id="date">
+                                </label>
+                               <a class="btnLink" href="booking.html"><input type="button" value="Book now" id="bookBtn"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5"></div>
+                    <div class="col-2 keyFlex">
+                        <img class="downkey" src="assets/logo/Polygon 3.png" alt="">
+                    </div>
+                    <div class="col-5"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container bottomMarge">
+            <div class="row">
+
+                <div class="col-12">
+                    <h2 class="mainTitle">Lodgings</h2>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="price">
+                    <img src="assets/images/Subtraction_2_A0_BooleanGroup_6_pattern.png" alt="">
+                    <div id="price">€90</div>
+                </div>
+                    <h3 id="lodgingTitle">Tent</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt totam molestiae sit cum,
+                        asperiores adipisci aspernatur alias deleniti nulla natus nobis! Iusto, totam? Aliquid explicabo
+                        nostrum, eum aperiam est quidem.<br>
+                        <a href=""><span id="lodgingLink">More...</span></a></p>
+                </div>
+
+                <div class="col-6">
+                    <div class="self">
+                        <div class="price">
+                        <img class="selfImg" src="assets/images/Subtraction_1_A0_BooleanGroup_2_pattern.png" alt="">
+                            <div id="price">€150</div>
+                    </div>
+                        <h3 id="lodgingTitle">mobile home</h3>
+                        <p id="middleTxt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae
+                            accusantium impedit numquam laudantium? Asperiores consequuntur sed voluptate, accusantium deleniti alias
+                            repellat voluptatum laboriosam inventore labore optio, corporis doloribus ducimus fuga!<br>
+                            <a href=""><span id="lodgingLink">More...</span></a></p>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="price">
+                    <img src="assets/images/Subtraction_3_A0_BooleanGroup_4_pattern.png" alt="">
+                        <div id="price">€250</div>
+                </div>
+                    <h3 id="lodgingTitle">treehouse</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt totam molestiae sit cum,
+                        asperiores adipisci aspernatur alias deleniti nulla natus nobis! Iusto, totam? Aliquid explicabo
+                        nostrum, eum aperiam est quidem.<br>
+                        <a href=""><span id="lodgingLink">More...</span></a></p>
+                </div>
+            </div>
+        </section>
+        <section id="activityBg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 id="activityTitle">Activities</h2>
+                    </div>
+                </div>
+                <div class="row actC">
+                    <div class="col-1" id="detailA"></div>
+                    <div class="col-11 articleBg" id="detailB">
+                        <div id="activL"> <img
+                                src="assets/images/atte_gronlund_43354_unsplash_A0_Rectangle_22_pattern.png" alt="">
+                            <div id="label">
+                                <h4 class="labelContent">Swimming pool</h4>
+                            </div>
+                        </div>
+                        <div class="txtbtn">
+                        <div class="swimContent">
+                            <p id="pooltxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <button id="activitybtn">See more</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="row actC">
+                        <div class="col-11 articleBg actP" id="detailB">
+                            <div class="col-2" id="detailA"></div>
+                            <div class="col-6 txtbtnB" id="detailA">
+                            <div class="swimContent">
+                                <p id="pooltxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <button id="activitybtn">See more</button>
+                            </div>
+                        </div>
+                        <div class="col-3" id="detailA"> <img
+                            src="assets/images/mike_erskine_144525_unsplash_A0_Rectangle_27_pattern.png" alt="">
+                        <div id="label">
+                            <h4 class="labelContent">Campfire</h4>
+                        </div>
+                    </div>
+                        </div>
+                        <div class="col-1" id="detailA"></div>
+                </div>
+                <div class="row actC">
+                            <div class="col-1" id="detailA"></div>
+                            <div class="col-11 articleBg" id="detailB">
+                                <div id="activL"> <img
+                                        src="assets/images/jordan_mcqueen_1290_unsplash_A0_Rectangle_31_pattern.png" alt="">
+                                    <div id="label">
+                                        <h4 class="labelContent">Early skate</h4>
+                                    </div>
+                                </div>
+                                <div class="txtbtn">
+                                <div class="swimContent">
+                                    <p id="pooltxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                    <button id="activitybtn">See more</button>
+                                </div>
+                            </div>
+                            </div>
+                </div>
+                <div class="row actC">
+                        <div class="col-11 articleBg actP" id="detailB">
+                            <div class="col-2" id="detailA"></div>
+                            <div class="col-6 txtbtnB" id="detailA">
+                            <div class="swimContent">
+                                <p id="pooltxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <button id="activitybtn">See more</button>
+                            </div>
+                        </div>
+                        <div class="col-3" id="detailA"> <img
+                            src="assets/images/johanna_dahlberg_690086_unspla_A0_Rectangle_35_pattern.png" alt="">
+                        <div id="label">
+                            <h4 class="labelContent">BBQ</h4>
+                        </div>
+                    </div>
+                        </div>
+                        <div class="col-1" id="detailA"></div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mainTitle">New this Year</h2>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-3">
+                        <img src="assets/images/Subtraction_2_A0_BooleanGroup_8_pattern.png" alt="">
+                        <h3 id="lodgingTitle">club SkyHigh</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt totam molestiae sit cum,
+                            asperiores adipisci aspernatur alias deleniti nulla natus nobis! Iusto, totam? Aliquid explicabo
+                            nostrum, eum aperiam est quidem.<br>
+                            <a href=""><span id="lodgingLink">More...</span></a></p>
+                    </div>
+    
+                    <div class="col-6">
+                        <div class="self">
+                            <img class="selfImg" src="assets/images/jakob_owens_696095_unsplash_A0_Ellipse_5_pattern.png" alt="">
+                            <h3 id="lodgingTitle">Pool Party</h3>
+                            <p id="middleTxt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae
+                                accusantium impedit numquam laudantium? Asperiores consequuntur sed voluptate, accusantium deleniti alias
+                                repellat voluptatum laboriosam inventore labore optio, corporis doloribus ducimus fuga!<br>
+                                <a href=""><span id="lodgingLink">More...</span></a></p>
+                        </div>
+                    </div>
+    
+                    <div class="col-3">
+                        <img src="assets/images/jens_johnsson_121807_unsplash_A0_Rectangle_38_pattern.png" alt="">
+                        <h3 id="lodgingTitle">Lake fun</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt totam molestiae sit cum,
+                            asperiores adipisci aspernatur alias deleniti nulla natus nobis! Iusto, totam? Aliquid explicabo
+                            nostrum, eum aperiam est quidem.<br>
+                            <a href=""><span id="lodgingLink">More...</span></a></p>
+                    </div>
+                </div>
+        </section>
+        <section class="nightBg">
+            <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mainTitle">camping picture</h2>
+                </div>
+            </div>
+            <div class="row bottom">
+                <div class="col-2">
+                    <img src="assets/images/tegan_mierle_157974_unsplash_A0_Rectangle_40_pattern.png" alt="">
+                </div>
+                <div class="col-2">
+                    <img src="assets/images/pietro_de_grandi_329892_unspla_A0_Rectangle_44_pattern.png" alt="">
+                </div>
+                <div class="col-2">
+                    <img src="assets/images/alfonso_scarpa_522089_unsplash_A0_Rectangle_58_pattern.png" alt="">
+                </div>
+                <div class="col-2">
+                    <img src="assets/images/chris_holder_658988_unsplash_A0_Rectangle_46_pattern.png" alt="">
+                </div>
+                <div class="col-2">
+                    <img src="assets/images/igor_rand_1217187_unsplash_A0_Rectangle_52_pattern.png" alt="">
+                </div>
+                <div class="col-2">
+                    <img src="assets/images/juan_davila_153912_unsplash_A0_Rectangle_42_pattern.png" alt="">
+                </div>
+            </div>
+            <div class="row margeTop">
+                <div class="col-2">
+                    <img src="assets/images/kevin_schmid_707589_unsplash_A0_Rectangle_54_pattern.png" alt="">
+                </div>
+                <div class="col-2">
+                    <img src="assets/images/marcela_laskoski_118684_unspla_A0_Rectangle_60_pattern.png" alt="">
+                </div>
+                <div class="col-2">
+                    <img src="assets/images/michael_discenza_199756_unspla_A0_Rectangle_50_pattern.png" alt="">
+                </div>
+                <div class="col-2">
+                    <img src="assets/images/sarthak_navjivan_751514_unspla_A0_Rectangle_62_pattern.png" alt="">
+                </div>
+                <div class="col-2">
+                    <img src="assets/images/toa_heftiba_723246_unsplash_A0_Rectangle_48_pattern.png" alt="">
+                </div>
+                <div class="col-2">
+                    <img src="assets/images/toni_cuenca_391183_unsplash_A0_Rectangle_56_pattern.png" alt="">
+                </div>
+
+            </div>
+        </div>
+        </section>
+    </main>
+    <footer id="footer">
+            <div class="row container footFlex">
+                <div class="col-3">
+                    <div>
+                        <nav>
+                            <ul class="footNav">
+                               <a href=""><li id="footPad" class="footActive">Home</li></a>
+                               <a href=""><li id="footPad">About us</li></a>
+                               <div class="white footPad" id="lodginbtn" onclick="toggle('foot');"> lodgin <img src="assets/logo/Polygon 1.png"
+                                alt=""></div>
+                        <ul id="foot">
+                            <a href="">
+                                <li>tent</li>
+                            </a>
+                            <a href="">
+                                <li class="">mobile home</li>
+                            </a>
+                            <a href="">
+                                <li id="footPad">treehouse</li>
+                            </a>
+                        </ul>
+                               <a href=""><li id="footPad">activities</li></a>
+                               <a href=""><li id="footPad" class="footContact">contact</li></a>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-6 center">
+                    <address class="adressStyle">
+                            Camp MaryCielo <br>
+                            Carr. de l’Estany Tort <br>
+                            25597 Espot,<br>
+                            Lérida, Spain <br>
+                           <a href="tel: 0034972331013"></a> 0034 972 33 10 13 <br>
+                           <a href="mailto:info@campingmarycielo.com"></a> info@campingmarycielo.com
+                    </address>
+                </div>
+                <div class="col-3">
+                    <img class="footLogo" src="assets/logo/logo.svg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright">Made By &copy; Kevin Dworschak</p>
+                </div>
+            </div>
+        </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
