@@ -14,6 +14,8 @@ body {
     margin: 0;
 }
 
+
+
 h1 {
     color: white;
     font-family: var(--f-heading);
@@ -39,7 +41,7 @@ a {
 }
 
 @media(max-width: 575.99999px) {
-
+   
     body {
         background-color: var(--c-quinary);
     }
@@ -53,6 +55,7 @@ a {
 }
 
 @media(min-width: 576px) and (max-width: 767.99999px) {
+    
 
 
     .downkey{
@@ -67,6 +70,7 @@ a {
 }
 
 @media(min-width: 768px) and (max-width: 991.99999px) {
+    
     .downkey{
         margin-bottom: -80px;
         animation: mover 1s infinite  alternate;
@@ -79,6 +83,7 @@ a {
 }
 
 @media(min-width: 992px) and (max-width: 1199.99999px) {
+    
 
     
     .downkey{
@@ -93,6 +98,7 @@ a {
 }
 
 @media(min-width: 1200px) {
+   
     .downkey{
         margin-bottom: -164px;
         animation: mover 1s infinite  alternate;
